@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <h1 class="header-logo">Rolling scopes <br> school</h1>
+
+            <nav>
+                <ul class="header-li">
+                    <li class="nav__li">
+                        <a href="#about" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="#skills" class="nav__link">Skills & exercises</a>
+                    </li>
+                    <li class="nav__li">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+       
+
+    </header>
+    
+    <main class="main">
+
+    
+
+    <section class="first-block">
+        <div class="fb__inf">
+            <h3 class="name">Koshaev Azamat</h3>
+
+            <p>25 years old, Nur-Sultan, KazATU Universety (2020 y., higher education)</p>
+    
+            <p class="fb__lang">rus(native)/eng(A2)/kz(native)</p>
+        </div>
+        <img src="/img/backg-img.jpg" alt="some-img">
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="about__inner-txt">
+            <h3 class="am__header" >About me</h3>
+            <p class="am__text">Hi, I'm Azamat – programmer from Nur-Sultan. <br>
+                I'm interested in programming and everything connected with it.
+                <br><br>
+                I'm studying at courses "Rolling scopes school" in EPAM.
+                <br><br>
+                Ready to implement excellent projects<br>
+                 with wonderful people.
+            </p>
+        </div>
+        
+    </section>
+
+    <section id="skills" class="skills">
+        <h3 class="am__header">
+            Skills & exercises
+        </h3>
+            <ul class="skills__tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+           <pre><code class="exercises">
+                module.exports = function reverse (n) {
+                    let str = String(n);
+                    let rev = str.split("").reverse().join("");
+                    let integer = parseInt(rev);
+                    return integer;
+                }
+                
+            </code></pre> 
+    </section>
+    
+    </main>
+
+    <footer id="contacts"  class="contacts">
+        <details>
+            <summary class="contacts__header">Contacts</summary>
+            <ul class="contacts__inner">
+                <li>E-mail: sdk1nv2@gmail.com</li>
+                <li>Telegram: AzKo</li>
+                <li>Github: https://github.com/NewUser-nu</li>
+            </ul>
+        </details>
+
+        <div class="courseInfo">
+            <figure class="footer__about--course">
+             <p><img class="footer__logo" src="img/rs_school_js.svg" alt="rs-logo"></p>
+             <figcaption class="footer__figcap"><a href="https://rs.school/js/">Ссылка на курс</a></figcaption>
+            </figure>
+            
+        </div>
+    </footer>
+</body>
+</html>

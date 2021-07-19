@@ -1,0 +1,141 @@
+body{
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: normal;
+
+    width: 100%;
+    margin: 0;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header-li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav__li{
+    list-style-type: none;
+    margin-right: 82px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+.nav__li:last-child{
+    margin-right: 0;
+}
+.nav__li:hover, .nav__li:focus, .nav__li:active{
+    opacity: 75%;
+}
+
+
+.first-block{
+    max-width: 1060px;
+    margin: 0 auto;
+    height: 100vh;
+}
+.fb__inf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: 18px;
+}
+/* .fb__lang{transform: rotate(-90deg);} */
+.about-me{
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+.nav__li{
+    text-decoration: none;
+}
+
+.about__inner-txt{
+    text-align: center;
+    padding-top: 15%;
+}
+.am__header{
+    font-size: 48px;
+    text-align: center;
+}
+.am__text{
+    font-size: 36px;
+}
+
+.skills{
+    height: 100vh;
+    padding-top: 10%;
+}
+.skills__tech{
+    list-style-type: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    font-size: 36px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    animation: color-change 3s infinite;
+}
+.exercises{
+    font-size: 32px;
+}
+
+.contacts{
+    height: 80vh;
+    background-color: #E5E5E5;
+    text-align: center;
+    padding-top: 20%;
+    
+}
+.contacts__header{
+    font-size: 48px;
+    text-align: center;
+}
+.contacts__inner{
+    list-style-type: none;
+    font-size: 36px;
+}
+.contacts__inner li {
+    padding-top: 3%;
+}
+.courseInfo{
+    background-color: #E5E5E5;
+}
+.footer__logo{
+    width: 500px;
+    height: 500px;
+}
+.footer__about--course{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.footer__figcap{
+    padding-top: 20%;
+    font-size: 28px;
+}
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+  }
