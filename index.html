@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -39,7 +39,7 @@
         <div class="fb__inf">
             <h3 class="name">Koshaev Azamat</h3>
 
-            <p>Nur-Sultan, KazATU Universety (2020 y., higher education)</p>
+            <p>Astana, KazATU Universety (2020 y., higher education)</p>
     
             <p class="fb__lang">rus(native)/eng(B2)/kz(native)</p>
         </div>
@@ -49,10 +49,10 @@
     <section id="about" class="about-me">
         <div class="about__inner-txt">
             <h3 class="am__header" >About me</h3>
-            <p class="am__text">Hi, I'm Azamat – programmer from Nur-Sultan. <br>
+            <p class="am__text">Hi, I'm Azamat – programmer from Astana. <br>
                 I'm interested in programming and everything connected with it.
                 <br><br>
-                I'm studying at courses "Rolling scopes school" in EPAM.
+                I'm studying at courses "Rolling scopes school" in EPAM. And also in alem school as Golang developer.
                 <br><br>
                 Ready to implement excellent projects<br>
                  with wonderful people.
@@ -78,7 +78,42 @@
                     return integer;
                 }
                 
+            </code>
+            <ul class="skills__tech">
+                <li>GO</li>
+            </ul>
+            <code class="exercises">
+                func HomeHandler(artistsSlice []models.Artists) http.HandlerFunc {
+                    return func(w http.ResponseWriter, r *http.Request) {
+
+                        // 404 ERROR
+                        if r.URL.Path != "/" {
+                            ErrorHandler(w, http.StatusNotFound)
+                            return
+                        }
+                        // 405 ERROR
+                        if r.Method != http.MethodGet {
+                            ErrorHandler(w, http.StatusMethodNotAllowed)
+                            return
+                        }
+                        // HTML
+                        template, err := template.ParseFiles("ui/templates/index.html")
+                        if err != nil {
+                            log.Print(err.Error())
+                            ErrorHandler(w, http.StatusInternalServerError)
+                            return
+                        }
+                        // DATA
+                        err = template.Execute(w, artistsSlice)
+                        if err != nil {
+                            ErrorHandler(w, http.StatusInternalServerError)
+                            return
+                        }
+                    }
+                }
+                
             </code></pre> 
+            <pre></pre> 
     </section>
     
     </main>
@@ -96,7 +131,10 @@
         <div class="courseInfo">
             <figure class="footer__about--course">
              <p><img class="footer__logo" src="./img/rs_school_js.svg" alt="rs-logo"></p>
-             <figcaption class="footer__figcap"><a href="https://rs.school/js/">Ссылка на курс</a></figcaption>
+             <figcaption class="footer__figcap">
+                <a href="https://rs.school/js/">Ссылка на курс</a>
+                <a href="https://alem.school/">Ссылка на курс Alem</a>
+            </figcaption>
             </figure>
             
         </div>
